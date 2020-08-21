@@ -1,6 +1,6 @@
 use fpcapps
 
-DELETE FROM BM.Tat
+DELETE FROM BM.Tat_123
 
 INSERT INTO BM.Tat(BidStatus, BidSizeStart, BidSizeEnd, TatDays)
 VALUES
