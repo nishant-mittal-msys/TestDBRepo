@@ -1,0 +1,16 @@
+USE [FPCAPPS]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [BM].[VendorPriority] (
+	color NVARCHAR(100) NOT NULL
+	,[priority] INT NOT NULL
+	)
+GO
+
+

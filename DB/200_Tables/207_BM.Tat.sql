@@ -1,0 +1,20 @@
+USE [FPCAPPS]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE BM.Tat (
+	BidStatus VARCHAR(100) NOT NULL
+	,BidSizeStart INT NOT NULL
+	,BidSizeEnd INT NOT NULL
+	,TatDays INT NOT NULL
+	,CONSTRAINT tat_unique_range UNIQUE (
+		BidSizeStart
+		,BidSizeEnd
+		,BidStatus
+		)
+	)

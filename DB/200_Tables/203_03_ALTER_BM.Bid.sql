@@ -1,0 +1,6 @@
+﻿USE FPCAPPS
+GO
+
+ALTER TABLE BM.Bid
+ADD 
+OpportunityId varchar(100) NULL

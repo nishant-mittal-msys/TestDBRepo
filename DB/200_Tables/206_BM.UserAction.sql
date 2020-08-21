@@ -1,0 +1,13 @@
+USE FPCAPPS
+GO
+
+CREATE TABLE BM.UserAction (
+	UserActionId INT PRIMARY KEY IDENTITY
+	,BidPartId INT NOT NULL
+	,CrossUserId NVARCHAR(100) NOT NULL
+	,CrossActionStatus VARCHAR(20) NULL
+	,CrossActionOn DATETIME NULL
+	,ValidatorUserId NVARCHAR(100) NULL
+	,ValidatorActionStatus VARCHAR(20) NULL
+	,ValidatorActionOn DATETIME NULL
+	)
